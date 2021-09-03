@@ -7,15 +7,15 @@
   
   <title>排序 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="排序算法选择排序123456789101112public void selece_sort(Comparable[] a)&amp;#123;    for(int i &#x3D; 0; i &lt; a.length; i++)&amp;#123;        int min &#x3D; i;  &#x2F;&#x2F;暂时将最小的元素的位置记为 i 		for(int j &#x3D; i; j &lt; a.length; j++)&amp;#123;">
+  <meta name="description" content="排序算法几种简单的排序算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="排序">
 <meta property="og:url" content="https://acyytm.github.io/2021/09/03/%E6%8E%92%E5%BA%8F/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="排序算法选择排序123456789101112public void selece_sort(Comparable[] a)&amp;#123;    for(int i &#x3D; 0; i &lt; a.length; i++)&amp;#123;        int min &#x3D; i;  &#x2F;&#x2F;暂时将最小的元素的位置记为 i 		for(int j &#x3D; i; j &lt; a.length; j++)&amp;#123;">
+<meta property="og:description" content="排序算法几种简单的排序算法">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-09-03T14:45:46.000Z">
-<meta property="article:modified_time" content="2021-09-03T14:48:04.469Z">
+<meta property="article:modified_time" content="2021-09-03T15:27:02.520Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="计算机">
 <meta property="article:tag" content="算法">
@@ -91,7 +91,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h1><h2 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">selece_sort</span><span class="params">(Comparable[] a)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; a.length; i++)&#123;</span><br><span class="line">        <span class="keyword">int</span> min = i;  <span class="comment">//暂时将最小的元素的位置记为 i </span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j = i; j &lt; a.length; j++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(less(j, min))&#123;</span><br><span class="line">                <span class="comment">//将最小的元素的位置更新</span></span><br><span class="line">                min = j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;	</span><br><span class="line">        exch(a, min, i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h1 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h1><p>几种简单的排序算法</p>
+<a id="more"></a>
+
+<h2 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">selece_sort</span><span class="params">(Comparable[] a)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; a.length; i++)&#123;</span><br><span class="line">        <span class="keyword">int</span> min = i;  <span class="comment">//暂时将最小的元素的位置记为 i </span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j = i; j &lt; a.length; j++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(less(j, min))&#123;</span><br><span class="line">                <span class="comment">//将最小的元素的位置更新</span></span><br><span class="line">                min = j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;	</span><br><span class="line">        exch(a, min, i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 
